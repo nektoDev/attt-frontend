@@ -6,7 +6,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { TorrentsComponent } from './torrents/torrents.component';
-import {MdButtonModule, MdToolbarModule} from '@angular/material';
+import {MdButtonModule, MdFormField, MdFormFieldModule, MdTableModule, MdToolbarModule, MatInputModule} from '@angular/material';
+import {TorrentsModule} from "./torrents/torrents.module";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -19,7 +21,13 @@ import {MdButtonModule, MdToolbarModule} from '@angular/material';
     BrowserAnimationsModule,
     AppRoutingModule,
     MdToolbarModule,
-    MdButtonModule
+    MdButtonModule,
+    TorrentsModule,
+    MdTableModule,
+    MdFormFieldModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatInputModule
   ],
   providers: [
     Title

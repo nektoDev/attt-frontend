@@ -9,6 +9,11 @@
   <span class="space-filler"></span>
 </md-toolbar>
 <section class="mat-typography">
-  <h1>{{getTitle()}}</h1>
-  <router-outlet></router-outlet>
+  <div class="body-wrapper">
+    <h1>{{getTitle()}}</h1>
+
+    <div class="body-wrapper">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
 </section>
